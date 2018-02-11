@@ -1,0 +1,13 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class SamsungAutomatedInventory extends AutomatedInventory
+{
+
+	public SamsungAutomatedInventory(String pName)
+	{
+		super(pName);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}

@@ -1,0 +1,11 @@
+package ca.mcgill.cs.swdesign.common;
+
+public interface Visitor
+{
+	public void visit(FoodItem a );
+	public static void visit(FurnitureItem a )
+	{
+		// TODO Auto-generated method stub
+		
+	}
+}

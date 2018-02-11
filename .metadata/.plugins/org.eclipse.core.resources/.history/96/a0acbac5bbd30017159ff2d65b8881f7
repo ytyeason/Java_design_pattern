@@ -1,0 +1,14 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class FurnitureItem extends Item
+{
+
+	private int expiryDate;
+	
+	public FurnitureItem(String pName, int pId, int pPrice)
+	{
+		super(pName, pId, pPrice);
+		// TODO Auto-generated constructor stub
+	}
+
+}

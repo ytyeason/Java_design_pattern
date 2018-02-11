@@ -1,0 +1,44 @@
+import java.util.Scanner;
+import java.util.*;
+
+class virtual_friends{
+  public static void main(String[] args){
+      Scanner sc = new Scanner(System.in);//set up the scanner
+      int test_num = Integer.parseInt(sc.nextLine());
+      
+      ArrayList<HashSet<String>> friends_set = new ArrayList<HashSet<String>>();
+
+       for(int i = 0; i < test_num; i++){
+         int pairs = Integer.parseInt(sc.nextLine());
+         for(int j = 0; j<pairs; j++){
+           String pair = sc.nextLine();
+           String[] splited_pair = pair.trim().split("\\s+");
+      
+           HashSet<String> temp_set = new HashSet<String>();
+           temp_set.add(splited_pair[0]);
+           temp_set.add(splited_pair[1]);
+           
+           for(HashSet<String> s: friends_set){
+        	   if(s.contains(splited_pair[0])){
+        		   for(String item: s){
+        			   temp_set.add(item);
+        		   }
+        	   }
+           }
+      
+         }
+       }
+
+      
+
+
+      Set<String> set1 = new HashSet<String>();
+      set1.add("a");
+      set1.add("b");
+      set1.add("ab");
+      set1.add("bbc");
+      set1.add("azxc");
+      set1.add("bfrrrr");
+      System.out.println(set1);
+  }
+}

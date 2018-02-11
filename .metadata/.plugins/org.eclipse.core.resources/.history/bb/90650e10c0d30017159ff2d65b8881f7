@@ -1,0 +1,29 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class WeekendTaxVisitor implements Visitor
+{
+
+	private double tax;
+	@Override
+	public void visit(FoodItem a)
+	{
+		// TODO Auto-generated method stub
+		int p = a.getPrice();
+		double t = p * 0.02;
+		tax = tax + t;
+	}
+
+	@Override
+	public void visit(FurnitureItem a)
+	{
+		// TODO Auto-generated method stub
+		int p = a.getPrice();
+		double t = p * 0.12;
+		tax = tax + t;
+	}
+	
+	public static double getTax(){
+		return tax;
+	}
+
+}

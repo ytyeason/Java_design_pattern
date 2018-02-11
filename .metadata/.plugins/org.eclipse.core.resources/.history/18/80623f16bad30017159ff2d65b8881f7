@@ -1,0 +1,20 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class SiemensAutomatedInventory extends AutomatedInventory
+{
+
+	public SiemensAutomatedInventory(String pName)
+	{
+		super(pName);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void locate(){
+		
+	}
+	
+	public void grab(){
+		
+	}
+
+}

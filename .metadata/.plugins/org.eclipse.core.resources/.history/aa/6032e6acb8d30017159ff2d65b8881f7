@@ -1,0 +1,14 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class AutomatedInventory extends Inventory
+{
+
+	public AutomatedInventory(String pName)
+	{
+		super(pName);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

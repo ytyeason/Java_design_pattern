@@ -1,0 +1,12 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class FoodItem extends Item
+{
+
+	public FoodItem(String pName, int pId, int pPrice)
+	{
+		super(pName, pId, pPrice);
+		// TODO Auto-generated constructor stub
+	}
+
+}

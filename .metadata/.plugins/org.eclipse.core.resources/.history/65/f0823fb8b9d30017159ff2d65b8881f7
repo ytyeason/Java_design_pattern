@@ -1,0 +1,29 @@
+package ca.mcgill.cs.swdesign.common;
+
+import java.util.HashMap;
+
+public abstract class AutomatedInventory extends Inventory
+{
+	private final HashMap<Item, Integer> aInventory = new HashMap<>();
+	
+	public AutomatedInventory(String pName)
+	{
+		super(pName);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public void dispose(Item pItem, int pQuantity)
+	{
+		locate();
+		grab();
+		int amount = aInventory.get(pItem);
+		amount -= pQuantity;
+		aInventory.put(pItem, amount);
+	}
+	
+	protected abstract void locate();
+	
+	protected abstract void grab();
+
+}

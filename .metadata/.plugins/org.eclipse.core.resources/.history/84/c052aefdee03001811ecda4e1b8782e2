@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.*;
+import org.jgrapht.alg.util.UnionFind<String>;
+
+class virtual_friends{
+  public static void main(String[] args){
+      Scanner sc = new Scanner(System.in);//set up the scanner
+      int test_num = Integer.parseInt(sc.nextLine());
+
+      // for(int i = 0; i < test_num; i++){
+      //   int pairs = Integer.parseInt(sc.nextLine());
+      //   for(int j = 0; j<pairs; j++){
+      //     String pair = sc.nextLine();
+      //     String[] splited_pair = pair.trim().split("\\s+");
+      //
+      //
+      //   }
+      // }
+
+      Set<String> set1 = new HashSet<String>();
+      set1.add("a");
+      set1.add("b");
+      UnionFind u = new UnionFind(set1);
+      System.out.println(u.find("a"));
+
+  }
+}

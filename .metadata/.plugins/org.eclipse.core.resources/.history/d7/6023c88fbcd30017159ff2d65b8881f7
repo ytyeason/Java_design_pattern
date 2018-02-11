@@ -1,0 +1,6 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class WeekDayTaxVisitor
+{
+
+}

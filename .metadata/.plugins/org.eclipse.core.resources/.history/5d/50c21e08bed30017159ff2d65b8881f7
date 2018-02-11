@@ -1,0 +1,22 @@
+package ca.mcgill.cs.swdesign.common;
+
+public class FoodItem extends Item implements Visitable
+{
+
+	private int expiryDate;
+	private int weight;
+	
+	public FoodItem(String pName, int pId, int pPrice)
+	{
+		super(pName, pId, pPrice);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void accept(Visitor visitor)
+	{
+		// TODO Auto-generated method stub
+		visitor.visit(this);
+	}
+
+}
